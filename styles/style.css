@@ -26,6 +26,9 @@ main{
     color: rgb(19, 19, 19);
 }
 
+.text_primary{
+    color: rgb(255, 144, 14);
+}
 .btn_primary{
     background-color: rgb(255, 144, 14);
     border-radius: 8px;
@@ -53,9 +56,9 @@ font-weight: 700;
     margin-right: 30px;
 }
 
-.nav_links li a{
+.nav_links li a, .card_description{
     text-decoration: none;
-font-size: 18px;
+font-size: 1.2rem;
 font-weight: 500;
 }
 
@@ -73,7 +76,7 @@ font-weight: 500;
     margin-bottom: 50px;
 }
 
-.banner_title{
+.banner_title, .card_title{
     font-size: 4rem;
     font-weight: 700;
 }
@@ -103,6 +106,7 @@ font-weight: 500;
 }
 
 
+/* Facts Section */
 
 
 @media screen and (max-width:576px) {
@@ -111,5 +115,12 @@ font-weight: 500;
     }
     .img_container{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
     }
 }
