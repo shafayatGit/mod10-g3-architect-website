@@ -9,6 +9,11 @@
 
 /* Shared style */
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .flex{
     display: flex;
 }
@@ -83,11 +88,28 @@ font-weight: 500;
     width: 100%;;
 }
 
+/* Team and features section */
+
+.teams{
+    align-items: center;
+    gap: 70px;
+    margin-top: 130px;
+}
+
+.img_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
 
 
 
 @media screen and (max-width:576px) {
-    .navbar , .nav_links{
+    .navbar , .nav_links, .teams{
         flex-direction: column;
+    }
+    .img_container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
